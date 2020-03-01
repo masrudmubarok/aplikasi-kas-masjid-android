@@ -1,0 +1,138 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.mubarok.e_kas_masjid"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:5:5-66
+11-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:6:5-79
+12-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:7:5-81
+13-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:7:22-78
+14    <uses-permission android:name="android.permission.SET_ALARM" />
+14-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:8:5-68
+14-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:8:22-65
+15    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+15-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:9:5-81
+15-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:9:22-78
+16    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+16-->[com.github.jakebonk:NotifyMe:1.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\2c745e4426674a02e3a2b4f549a60820\jetified-NotifyMe-1.0.0\AndroidManifest.xml:11:5-76
+16-->[com.github.jakebonk:NotifyMe:1.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\2c745e4426674a02e3a2b4f549a60820\jetified-NotifyMe-1.0.0\AndroidManifest.xml:11:22-73
+17    <uses-permission android:name="android.permission.VIBRATE" />
+17-->[com.wdullaer:materialdatetimepicker:3.6.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\452fdd52f909e8b7d820efa35226688e\jetified-materialdatetimepicker-3.6.0\AndroidManifest.xml:26:5-66
+17-->[com.wdullaer:materialdatetimepicker:3.6.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\452fdd52f909e8b7d820efa35226688e\jetified-materialdatetimepicker-3.6.0\AndroidManifest.xml:26:22-63
+18
+19    <application
+19-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:11:5-44:19
+20        android:allowBackup="true"
+20-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:12:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.1.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:24:18-86
+22        android:debuggable="true"
+23        android:icon="@drawable/logoekasm"
+23-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:13:9-43
+24        android:label="@string/app_name"
+24-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:14:9-41
+25        android:roundIcon="@drawable/logoekasm"
+25-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:15:9-48
+26        android:supportsRtl="true"
+26-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:16:9-35
+27        android:theme="@style/AppTheme" >
+27-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:17:9-40
+28        <receiver android:name="com.allyants.notifyme.NotificationPublisher" />
+28-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:19:9-79
+28-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:19:19-77
+29        <receiver
+29-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:20:9-26:20
+30            android:name="com.allyants.notifyme.BootNotifyMe"
+30-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:20:19-68
+31            android:enabled="true"
+31-->[com.github.jakebonk:NotifyMe:1.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\2c745e4426674a02e3a2b4f549a60820\jetified-NotifyMe-1.0.0\AndroidManifest.xml:16:13-35
+32            android:exported="true" >
+32-->[com.github.jakebonk:NotifyMe:1.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\2c745e4426674a02e3a2b4f549a60820\jetified-NotifyMe-1.0.0\AndroidManifest.xml:17:13-36
+33            <intent-filter>
+33-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:21:13-25:29
+34                <action android:name="android.intent.action.BOOT_COMPLETED" />
+34-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:22:17-78
+34-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:22:25-76
+35
+36                <category android:name="android.intent.category.HOME" />
+36-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:24:17-73
+36-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:24:27-70
+37            </intent-filter>
+38        </receiver>
+39
+40        <activity android:name="com.mubarok.e_kas_masjid.LoginActivity" />
+40-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:27:9-51
+40-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:27:19-48
+41        <activity android:name="com.mubarok.e_kas_masjid.SplashActivity" >
+41-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:28:9-34:20
+41-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:28:19-49
+42            <intent-filter>
+42-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:29:13-33:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:30:17-69
+43-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:30:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:32:17-77
+45-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:32:27-74
+46            </intent-filter>
+47        </activity>
+48        <activity android:name="com.mubarok.e_kas_masjid.DashboardActivity" />
+48-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:35:9-54
+48-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:35:19-52
+49        <activity android:name="com.mubarok.e_kas_masjid.TransaksiActivity" />
+49-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:36:9-54
+49-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:36:19-52
+50        <activity android:name="com.mubarok.e_kas_masjid.TransaksiTambahActivity" />
+50-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:37:9-60
+50-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:37:19-58
+51        <activity android:name="com.mubarok.e_kas_masjid.TransaksiEditActivity" />
+51-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:38:9-58
+51-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:38:19-56
+52        <activity android:name="com.mubarok.e_kas_masjid.LaporanActivity" />
+52-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:39:9-52
+52-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:39:19-50
+53        <activity android:name="com.mubarok.e_kas_masjid.AkunActivity" />
+53-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:40:9-49
+53-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:40:19-47
+54        <activity android:name="com.mubarok.e_kas_masjid.InfoAkunActivity" />
+54-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:41:9-53
+54-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:41:19-51
+55        <activity android:name="com.mubarok.e_kas_masjid.GantiPasswordActivity" />
+55-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:42:9-58
+55-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:42:19-56
+56        <activity android:name="com.mubarok.e_kas_masjid.TentangActivity" />
+56-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:43:9-52
+56-->C:\Users\DELL\AndroidStudioProjects\EKas_Masjid\app\src\main\AndroidManifest.xml:43:19-50
+57
+58        <receiver
+58-->[com.github.jakebonk:NotifyMe:1.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\2c745e4426674a02e3a2b4f549a60820\jetified-NotifyMe-1.0.0\AndroidManifest.xml:18:9-21:39
+59            android:name="com.allyants.notifyme.ActionReceiver"
+59-->[com.github.jakebonk:NotifyMe:1.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\2c745e4426674a02e3a2b4f549a60820\jetified-NotifyMe-1.0.0\AndroidManifest.xml:19:13-64
+60            android:enabled="true"
+60-->[com.github.jakebonk:NotifyMe:1.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\2c745e4426674a02e3a2b4f549a60820\jetified-NotifyMe-1.0.0\AndroidManifest.xml:20:13-35
+61            android:exported="true" />
+61-->[com.github.jakebonk:NotifyMe:1.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\2c745e4426674a02e3a2b4f549a60820\jetified-NotifyMe-1.0.0\AndroidManifest.xml:21:13-36
+62        <receiver
+62-->[com.github.jakebonk:NotifyMe:1.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\2c745e4426674a02e3a2b4f549a60820\jetified-NotifyMe-1.0.0\AndroidManifest.xml:22:9-25:39
+63            android:name="com.allyants.notifyme.DeletePendingIntent"
+63-->[com.github.jakebonk:NotifyMe:1.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\2c745e4426674a02e3a2b4f549a60820\jetified-NotifyMe-1.0.0\AndroidManifest.xml:23:13-69
+64            android:enabled="true"
+64-->[com.github.jakebonk:NotifyMe:1.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\2c745e4426674a02e3a2b4f549a60820\jetified-NotifyMe-1.0.0\AndroidManifest.xml:24:13-35
+65            android:exported="true" />
+65-->[com.github.jakebonk:NotifyMe:1.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\2c745e4426674a02e3a2b4f549a60820\jetified-NotifyMe-1.0.0\AndroidManifest.xml:25:13-36
+66    </application>
+67
+68</manifest>

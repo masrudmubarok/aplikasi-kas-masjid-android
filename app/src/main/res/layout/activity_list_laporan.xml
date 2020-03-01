@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="horizontal|vertical">
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="910dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                cardView:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/relativeL1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="1dp"
+                        android:gravity="top"
+                        tools:ignore="InvalidId">
+
+                        <TextView
+                            android:id="@+id/idL"
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="ID"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/tanggalL"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="TANGGAL"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/keteranganL"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="KETERANGAN"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/pemasukanL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="17dp"
+                            android:gravity="right"
+                            android:text="PEMASUKAN"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/pengeluaranL"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="PENGELUARAN"
+                            android:textSize="17sp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+</RelativeLayout>

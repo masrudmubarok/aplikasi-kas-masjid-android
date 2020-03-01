@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mubarok.e_kas_masjid" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logoekasm"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logoekasm"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <receiver android:name="com.allyants.notifyme.NotificationPublisher"/>
+        <receiver android:name="com.allyants.notifyme.BootNotifyMe">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DashboardActivity"/>
+        <activity android:name=".TransaksiActivity"/>
+        <activity android:name=".TransaksiTambahActivity"/>
+        <activity android:name=".TransaksiEditActivity"/>
+        <activity android:name=".LaporanActivity"/>
+        <activity android:name=".AkunActivity"/>
+        <activity android:name=".InfoAkunActivity"/>
+        <activity android:name=".GantiPasswordActivity"/>
+        <activity android:name=".TentangActivity"/>
+    </application>
+
+</manifest>

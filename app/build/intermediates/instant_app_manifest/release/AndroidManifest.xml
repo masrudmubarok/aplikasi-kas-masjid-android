@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mubarok.e_kas_masjid"
+    android:targetSandboxVersion="2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="29" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:icon="@drawable/logoekasm"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logoekasm"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <receiver android:name="com.allyants.notifyme.NotificationPublisher" />
+        <receiver
+            android:name="com.allyants.notifyme.BootNotifyMe"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.mubarok.e_kas_masjid.LoginActivity" />
+        <activity android:name="com.mubarok.e_kas_masjid.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mubarok.e_kas_masjid.DashboardActivity" />
+        <activity android:name="com.mubarok.e_kas_masjid.TransaksiActivity" />
+        <activity android:name="com.mubarok.e_kas_masjid.TransaksiTambahActivity" />
+        <activity android:name="com.mubarok.e_kas_masjid.TransaksiEditActivity" />
+        <activity android:name="com.mubarok.e_kas_masjid.LaporanActivity" />
+        <activity android:name="com.mubarok.e_kas_masjid.AkunActivity" />
+        <activity android:name="com.mubarok.e_kas_masjid.InfoAkunActivity" />
+        <activity android:name="com.mubarok.e_kas_masjid.GantiPasswordActivity" />
+        <activity android:name="com.mubarok.e_kas_masjid.TentangActivity" />
+
+        <receiver
+            android:name="com.allyants.notifyme.ActionReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name="com.allyants.notifyme.DeletePendingIntent"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>
